@@ -25,6 +25,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: checkout code
+        uses: actions/checkout@v3
+        
       - name: Build the docker image
         uses: docker build -t code2cloud-nodejs .
 
