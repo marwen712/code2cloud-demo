@@ -1,14 +1,16 @@
 # This is a basic workflow to help you get started with Actions
-#declencheur
 name: code to cloud workshop
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "master" branch
+  # Triggers the workflow on push events to the "master" branch
   push:
-    branches: [ "master" ]
+    branches:
+      - master
+  # Triggers the workflow on pull request events to the "master" branch
   pull_request:
-    branches: [ "master" ]
+    branches:
+      - master
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,15 +25,15 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: telecharji code source w 7otou f machine
-      - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: a3mel log hello
+      - name: Log Hello
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
-      - name: a3mel log wa7da o5ra
+      - name: Log Another Message
         run: |
-          echo hello marwen,
-          echo happy birthday fachfouch!.
+          echo Hello, Marwen,
+          echo Happy Birthday, Fachfouch!.
