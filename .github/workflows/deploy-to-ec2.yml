@@ -34,4 +34,4 @@ jobs:
       - name: a3mel log wa7da o5ra
         run: |
           echo hello marwen,
-          echo happy birthday fachfouch.
+          echo happy birthday fachfouch!.
