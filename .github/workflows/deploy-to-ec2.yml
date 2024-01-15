@@ -54,3 +54,4 @@ jobs:
             sudo docker rm code2cloud-nodejs || true
             sudo docker run -d -p 3005:3000 --name=code2cloud-nodejs ${{ secrets.DOCKER_USERNAME }}/code2cloud-nodejs:latest
             sudo docker ps
+          options: -vvv
